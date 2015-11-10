@@ -15,10 +15,10 @@ def read(file_name):
 
 PACKAGE = "django_select2"
 NAME = "Django-Select2"
-DESCRIPTION = "Select2 option fields for Django"
-AUTHOR = "Nirupam Biswas, Johannes Hoppe"
-AUTHOR_EMAIL = "admin@applegrew.com"
-URL = "https://github.com/applegrew/django-select2"
+DESCRIPTION = "Select2 patched for using staticfiles, based on applegrew/django_select2"
+AUTHOR = "Nirupam Biswas, Johannes Hoppe. Patch by Maxime Lorant"
+AUTHOR_EMAIL = "maxime.lorant@orfeo.pro"
+URL = "https://github.com/mlorant/django-select2"
 VERSION = __import__(PACKAGE).__version__
 
 

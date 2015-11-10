@@ -51,6 +51,7 @@ from __future__ import absolute_import, unicode_literals
 from functools import reduce
 
 from django import forms
+from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.core import signing
 from django.core.urlresolvers import reverse_lazy
 from django.db.models import Q
@@ -102,7 +103,7 @@ class Select2Mixin(object):
         """
         return forms.Media(
             js=('//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js',
-                'django_select2/django_select2.js'),
+                static('django_select2/django_select2.js')),
             css={'screen': ('//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css',)}
         )
 
